@@ -21,8 +21,8 @@ import java.io.FileReader
 import java.io.IOException
 import java.lang.StringBuilder
 
-// TODO (1: Fix any bugs)
-// TODO (2: Add function saveComic(...) to save and load comic info automatically when app starts)
+// (1: Fix any bugs)
+// (2: Add function saveComic(...) to save and load comic info automatically when app starts)
 
 class MainActivity : AppCompatActivity() {
 
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 var line: String?
                 while (br.readLine().also { line = it } != null) {
                     text.append(line)
-                    text.append('\n')
+                    //text.append('\n')
                 }
                 br.close()
                 downloadComic(text.toString())
